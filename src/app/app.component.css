@@ -1,0 +1,39 @@
+table {
+    width: 50%;
+    /* border-collapse: collapse;  */
+  }
+  
+  th{
+    width: 20%;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px; /* Adds space inside each cell */
+    /* border: 1px solid #ddd;  */
+    text-align: left; /* Align text to the left */
+   
+  }
+
+  td{
+    padding-left: 0%;
+    
+    padding-top: 5px;
+    padding-bottom: 5px; /* Adds space inside each cell */
+    /* border: 1px solid #ddd;  */
+    text-align: left; /* Align text to the left */
+    
+  }
+ 
+  button{
+    padding-right: 5px;
+  }
+
+  .company-heading {
+    background-color: burlywood;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .heading{
+    background-color:#cea052 !important;
+  }

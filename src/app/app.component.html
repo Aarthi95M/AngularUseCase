@@ -1,0 +1,67 @@
+<h3 class="company-heading">Enter Company Details</h3>
+<div>
+  <table>
+    <tr>
+      <th>
+        <label for="CompanyName">Company Name</label>
+      </th>
+      <td>
+        <input type="text" id="CompanyName" [(ngModel)] = "singleCompany.companyName" >
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="Location">Location</label>
+      </th>
+      <td>
+        <input type="text" id="Location" [(ngModel)] = "singleCompany.Location">
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="Year">Year Of Establishment</label>
+      </th>
+      <td>
+        <input type="text" id="Year" [(ngModel)] = "singleCompany.yearOfEstablishment">
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <label for="CountOfEmployess">Count of Employees</label>
+      </th>
+      <td>
+        <input type="text" id="CountOfEmployess" [(ngModel)] = "singleCompany.countOfEmployees">
+      </td>
+    </tr>
+    
+    <tr>
+      <th></th>
+      <td><button type="submit" class="btn btn-success"  (click)="onSubmit(singleCompany)">Submit</button> <span style="margin-left: 10px;"></span> 
+        </td>
+    </tr>
+  </table>
+  
+</div>
+<br>
+<br>
+<h3 class="company-heading">Company Details</h3>
+<div>
+  <table class="table table-bordered table-striped" style="width: 100%;">
+    <thead class="thead-dark">
+      <tr>
+        <th class="heading">Company Name</th>
+        <th class="heading">Year of Establishment</th>
+        <th class="heading">Count of Employees</th>
+        <th class="heading">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let company of companyList">
+        <td>{{ company.companyName }}</td>
+        <td>{{ company.yearOfEstablishment }}</td>
+        <td>{{ company.countOfEmployees }}</td>
+        <td>{{ company.Location }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
