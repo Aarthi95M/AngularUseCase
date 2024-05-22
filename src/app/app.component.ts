@@ -28,10 +28,5 @@ export class AppComponent {
     console.log(this.companyList);
   }
 
-  OnClear(singleCompany : Company){
-    this.singleCompany.Location="";
-    this.singleCompany.companyName="";
-    this.singleCompany.yearOfEstablishment=0;
-    this.singleCompany.countOfEmployees=0;
-  }
+  
 }
